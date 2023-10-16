@@ -1,0 +1,64 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.task {
+  list-style-type: none;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightgray;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px #151515;
+}
+
+.task .task-content {
+  display: flex;
+  align-items: center;
+}
+
+.task .task-content input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.task.completed .task-content p.task-text {
+  text-decoration: line-through;
+}
+
+.remove-button {
+  background-color: lightcoral;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out,
+    transform 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+.edit-button {
+  background-color: #5fbfff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.save-button {
+  background-color: #5fbfff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.remove-button:hover {
+  background-color: #fe4c4c;
+}
